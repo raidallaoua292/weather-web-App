@@ -49,7 +49,7 @@ export default function WeatherApp() {
         const latitude = 51.509865;
         const longitude = -0.118092;
             // get the weather data
-            axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude }&appid=000737b049ec9a67257b168307cce694&units=metric`)
+            axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=51.509865&lon=-0.118092&appid=000737b049ec9a67257b168307cce694&units=metric`)
             .then((response) => {
                 console.log(response.data);
                 setWeatherData({
