@@ -66,7 +66,7 @@ export const featchweatherData = createAsyncThunk("weatherApi/fetchweatherData",
         sunrise: moment(new Date(response.data.sys.sunrise * 1000)).format("h:mm a"),
         sunset: moment(new Date(response.data.sys.sunset * 1000)).format("h:mm a"),
         weather: response.data.weather[0].main,
-        weather_icon: response.data.weather[0].icon,
+        weather_icon: response.data.weather[0].icon
     
     }
     
